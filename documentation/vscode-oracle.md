@@ -94,6 +94,8 @@ SQLNET.AUTHENTICATION_SERVICES=(NONE)
 ### Debugging
 
 The extension includes an inbuilt debugger similar to SQL Developer but with enhanced features from VS Code.
+https://medium.com/oracledevs/debugging-pl-sql-with-visual-studio-code-and-more-45631f3952cf
+
 
 #### Debugging Methods
 
