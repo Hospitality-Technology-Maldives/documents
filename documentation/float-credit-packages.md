@@ -49,7 +49,10 @@ HTOPERA.FLOAT_PKG.GEN_CREDIT(
 
 -- Example
 
-HTOPERA.FLOAT_PKG.GEN_CREDIT('SPA', RESV_NAME_ID, '32002,32001,30223', 'A', 'NA', 55);
+SPAADT === HTOPERA.FLOAT_PKG.GEN_CREDIT('SPA', RESV_NAME_ID, '32002,32001,30223', 'A', 'NA', 55); -- example for adult
+SPACHL === HTOPERA.FLOAT_PKG.GEN_CREDIT('SPA', RESV_NAME_ID, '32002,32001,30223', 'C', 'NA', 0, 25, 25); -- example for children
+
+MINADT === HTOPERA.FLOAT_PKG.GEN_CREDIT('MB', RESV_NAME_ID, '34001', 'A', 'NA', 55); -- example for minibar pool 
 ```
 
 - **Allowance Pool Code:** This is the code for the allowance pool, which can be used across multiple packages to combine the total allowance created by the package.
@@ -107,7 +110,7 @@ A guest is entitled to a $55 resort credit, arriving on the 16th and departing o
 - During the night audit, the remaining +$35 is posted to the room as this is the last night audit. If the resort credit is not fully consumed, the balance will be posted during the last night audit.
 - On the departure day, the guest posts a $50 transaction to the room.
 - A +$35 adjustment is posted to the room automatically to apply the maximum available resort credit.
-- A balance of +$15 remains on the room, shown as a pseudo amount -$15 as overage. This is not a physical posting.
+- A balance of $15 remains on the room, shown as a pseudo amount -$15 as overage. This is not a physical posting.
 
 > [!NOTE]
 >
